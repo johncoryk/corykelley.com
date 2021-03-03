@@ -1,0 +1,16 @@
+{
+	"colors": {
+		"white": "#fffeff",
+		"darkGray": "#131820",
+		"lightGray": "#A5B1C2",
+		"black": "#001",
+		"green": "#31D16D"
+	},
+	"shadow": {
+		"main": "2px 6px 10px -1px rgba(0,0,0,0.21);"
+	},
+	"maxWidth": {
+		"home": "1980px",
+		"post": "1250px"
+	}
+}
