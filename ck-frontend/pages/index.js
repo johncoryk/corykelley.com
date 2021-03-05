@@ -12,7 +12,8 @@ import { IconContext } from 'react-icons';
 
 import styled from '@emotion/styled';
 
-const index = () => {
+const index = ({ posts }) => {
+	console.log(posts);
 	return (
 		<Layout maxWidth={theme.maxWidth.home}>
 			<StyledMainContainer>
@@ -60,7 +61,15 @@ const index = () => {
 						</article>
 					</section>
 				</StyledNavSection>
-				<StyledBlogSection>blogs</StyledBlogSection>
+				<StyledBlogSection>
+					{posts &&
+						posts.map((post) => (
+							<>
+								<h3>{post.Title}</h3>
+								<p>{post.Body}</p>
+							</>
+						))}
+				</StyledBlogSection>
 			</StyledMainContainer>
 		</Layout>
 	);
@@ -93,5 +102,16 @@ const StyledBlogSection = styled.section`
 	margin-top: 2.5rem;
 	width: 100%;
 `;
+
+export async function getStaticProps(context) {
+	const data = await fetch(`http://localhost:1337/posts`);
+	const posts = await data.json();
+
+	return {
+		props: {
+			posts,
+		},
+	};
+}
 
 export default index;
