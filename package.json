@@ -1,0 +1,19 @@
+{
+	"name": "corykelley.com",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "https://github.com/johncoryk/corykelley.com.git",
+	"author": "Cory Kelley <me@corykelley.com> (https://corykelley.com)",
+	"license": "MIT",
+	"dependencies": {
+		"@tryghost/content-api": "^1.5.0",
+		"next": "^10.0.8",
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1"
+	},
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start"
+	}
+}
