@@ -1,5 +1,4 @@
 import Layout from '../components/Layout';
-import { getPosts } from '../lib/posts';
 import Link from 'next/link';
 
 import styled from '@emotion/styled';
@@ -17,59 +16,7 @@ const Index = ({ posts }) => {
 						football.
 					</p>
 				</section>
-				<section className='latest-blog'>
-					<h2>Latest Posts</h2>
-					<ul>
-						{posts.map((post) => (
-							<li key={post.id}>
-								<h3>
-									<Link href={`/posts/${post.slug}`}>{post.title}</Link>
-								</h3>
-								<p>{post.excerpt}</p>
-							</li>
-						))}
-					</ul>
-					<ul>
-						{posts.map((post) => (
-							<li key={post.id}>
-								<h3>
-									<Link href={`/posts/${post.slug}`}>{post.title}</Link>
-								</h3>
-								<p>{post.excerpt}</p>
-							</li>
-						))}
-					</ul>
-					<ul>
-						{posts.map((post) => (
-							<li key={post.id}>
-								<h3>
-									<Link href={`/posts/${post.slug}`}>{post.title}</Link>
-								</h3>
-								<p>{post.excerpt}</p>
-							</li>
-						))}
-					</ul>
-					<ul>
-						{posts.map((post) => (
-							<li key={post.id}>
-								<h3>
-									<Link href={`/posts/${post.slug}`}>{post.title}</Link>
-								</h3>
-								<p>{post.excerpt}</p>
-							</li>
-						))}
-					</ul>
-					<ul>
-						{posts.map((post) => (
-							<li key={post.id}>
-								<h3>
-									<Link href={`/posts/${post.slug}`}>{post.title}</Link>
-								</h3>
-								<p>{post.excerpt}</p>
-							</li>
-						))}
-					</ul>
-				</section>
+				<section className='latest-blog'></section>
 			</StyledMainContent>
 		</Layout>
 	);
@@ -97,18 +44,3 @@ const StyledMainContent = styled.div`
 		}
 	}
 `;
-
-export async function getStaticProps(context) {
-	const posts = await getPosts();
-
-	if (!posts) {
-		return {
-			notFound: true,
-		};
-	}
-
-	return {
-		props: { posts },
-		revalidate: 1,
-	};
-}

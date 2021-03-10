@@ -3,10 +3,6 @@ import Layout from '../components/Layout';
 const About = () => {
 	return (
 		<Layout>
-			<img
-				src='https://res.cloudinary.com/corykelley/image/upload/v1615382724/ck_headshot_bw_qhwjvk.jpg'
-				alt='Cory Kelley'
-			/>
 			<div className='about-me'>
 				<p>
 					Hey, I’m Lee. I'm a developer, writer, and the creator of Mastering

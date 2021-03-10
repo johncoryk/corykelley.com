@@ -1,1 +1,1 @@
-# Codebase for corykelley.com
+# corykelley.com
