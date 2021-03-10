@@ -6,6 +6,8 @@
 	"author": "Cory Kelley <me@corykelley.com> (https://corykelley.com)",
 	"license": "MIT",
 	"dependencies": {
+		"@emotion/react": "^11.1.5",
+		"@emotion/styled": "^11.1.5",
 		"@tryghost/content-api": "^1.5.0",
 		"next": "^10.0.8",
 		"react": "^17.0.1",
