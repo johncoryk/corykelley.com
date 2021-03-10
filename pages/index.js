@@ -10,7 +10,7 @@ const Index = ({ posts }) => {
 		<Layout>
 			<StyledMainContent>
 				<section className='intro'>
-					<h1>Hey, I'm Cory.</h1>
+					<h1>Hey, I'm Cory 👋</h1>
 					<p>
 						I'm a software engineer, web developer, writer, and occasional video
 						creator. Depending on the season, I'm most likely watching college

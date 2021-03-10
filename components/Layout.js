@@ -29,6 +29,10 @@ const StyledLayoutContainer = styled.div`
 	main {
 		min-height: 85vh;
 	}
+
+	footer {
+		margin: 3rem 0;
+	}
 `;
 
 const StyledHeader = styled.header`

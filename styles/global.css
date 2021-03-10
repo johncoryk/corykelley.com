@@ -30,6 +30,10 @@ ul {
 		Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
+p {
+	color: #5e6676;
+}
+
 ol,
 ul {
 	list-style: none;
