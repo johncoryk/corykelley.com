@@ -1,15 +1,22 @@
+import Link from 'next/link';
 import styled from '@emotion/styled';
 
 const Layout = ({ children }) => {
 	return (
 		<StyledLayoutContainer>
 			<StyledHeader>
-				<h3>logo</h3>
+				<Link href='/'>Logo</Link>
 				<nav>
 					<ul>
-						<li>About</li>
-						<li>Blog</li>
-						<li>Projects</li>
+						<li>
+							<Link href='/about'>About</Link>
+						</li>
+						<li>
+							<Link href='/blog'>Blog</Link>
+						</li>
+						<li>
+							<Link href='/projects'>Projects</Link>
+						</li>
 					</ul>
 				</nav>
 			</StyledHeader>
